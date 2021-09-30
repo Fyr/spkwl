@@ -1,0 +1,1 @@
+<a href="<?=$url?>" class="btn btn-primary btn-outline-primary py-2"><?= isset($title) && $title ? $title : __('More')?>&nbsp;&nbsp;&nbsp;<span class="ionicons ion-md-arrow-forward"></span></a>

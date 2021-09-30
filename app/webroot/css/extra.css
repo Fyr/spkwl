@@ -1,0 +1,68 @@
+.error-message { 
+    color: red;
+    font-size: 14px; 
+    font-family: 'Tahoma', sans-serif;
+    position: relative;
+    top: -30px;
+}
+
+.blog-entry .block-20 {
+    height: 400px;
+}
+
+.blog-entry .tagcloud a {
+    text-transform: lowercase;
+    font-size: 14px;
+    padding: 0px 7px;
+    color: grey;
+}
+
+.blog-entry .tagcloud a:hover {
+    border: 1px solid #000;
+    color: #000;
+}
+
+.block-27.paging ul li a, .block-27.paging ul li span {
+    font-size: 20px;
+    color: grey !important;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    /* font-family: 'Open Sans Condensed'; */
+}
+
+.block-27.paging ul li.active span, .block-27.paging ul li a:hover {
+    color: white !important;
+    background: #bf925b;
+}
+
+.categories li a, .categories li a span {
+    color: grey;
+}
+
+.categories li.active a, .categories li.active a span {
+    color: #bf925b;
+    font-style: normal;
+}
+
+.categories li a:hover, .categories li a:hover span {
+    color: #bf925b;
+    font-style: normal;
+}
+
+span.ionicons {
+    position: relative;
+    top: 1px;
+}
+
+
+.cake-sql-log td, .cake-sql-log th {
+    border: 1px solid #000;
+}
+
+@media (max-width: 575.98px) {
+    .services-wrap .text {
+        line-height: 1.2;
+        font-size: 16px;
+    }
+}
