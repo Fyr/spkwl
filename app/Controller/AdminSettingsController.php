@@ -20,7 +20,6 @@ class AdminSettingsController extends AdminController {
     public function index() {}
 
     public function contacts() {}
-    public function pageHeader() {}
     public function pageFooter() {}
     public function promoLeft() {}
     public function promoMain() {}

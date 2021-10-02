@@ -10,6 +10,7 @@ class PagesController extends AppController {
 	public $helpers = array('SiteForm');
 
 	public function home() {
+		/*
 		$aPages = array();
 		foreach($this->Page->find('all') as $page) {
 			$slug = $page['Page']['slug'];
@@ -48,6 +49,7 @@ class PagesController extends AppController {
 				return $this->redirect($route);
 			}
 		}
+		*/
 	}
 
 	public function view($slug) {

@@ -376,14 +376,17 @@ msgstr "Консультации"
 msgid "Slider"
 msgstr "Слайдер"
 
+msgid "Create slider"
+msgstr "Создать слайд"
+
+msgid "Edit slider"
+msgstr "Редактировать слайд"
+
 msgid "Collections"
 msgstr "Коллекции"
 
 msgid "Collection"
 msgstr "Коллекция"
-
-msgid "Museum items"
-msgstr "Музейные предметы"
 
 msgid "Subcategories"
 msgstr "Подкатегории"

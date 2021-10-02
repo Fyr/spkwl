@@ -46,6 +46,7 @@ class AdminController extends AppController {
         		array('label' => __('Settings'), 'icon' => 'icon-wrench', 'url' => '', 'submenu' => array(
         			// array('label' => __('System'), 'url' => array('controller' => 'AdminSettings', 'action' => 'index')),
         			array('label' => __('Contacts'), 'url' => array('controller' => 'AdminSettings', 'action' => 'contacts')),
+					array('label' => __('Slider'), 'url' => array('controller' => 'AdminSlider', 'action' => 'index')),
         		)),
 				/*
 				array('label' => __('Website'), 'icon' => 'icon-globe', 'url' => '', 'submenu' => array(

@@ -126,7 +126,11 @@ class AppController extends Controller {
 		$limit = 3;
 		$order = array('Product.created' => 'DESC');
 		$aRecentProducts = $this->Product->find('all', compact('conditions', 'order', 'limit'));
-		$this->set(compact('promoImages', 'aCategories', 'aTags', 'aRecentProducts'));
+
+		$this->Slider = $this->loadModel('Slider');
+		$aSlides = $this->Slider->find('all');
+
+		$this->set(compact('promoImages', 'aCategories', 'aTags', 'aRecentProducts', 'aSlides'));
 	}
 /*
 	protected function _refreshUser($lForce = false) {
