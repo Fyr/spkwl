@@ -11,3 +11,5 @@ app/webroot/assets/*
 app/webroot/js/vendor/*
 app/webroot/img/tmp/*
 .idea
+*.bak
+*.bat
