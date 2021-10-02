@@ -21,11 +21,15 @@
     $tabs = array(
         __('General') => $this->Html->div('form-body',
             $this->PHForm->input('title', array('label' => array('class' => 'col-md-3 control-label', 'text' => __('Title'))))
-            .$this->PHForm->input('slug', array('label' => array('class' => 'col-md-3 control-label', 'text' => __('Icon class'))))
+            // .$this->PHForm->input('slug', array('label' => array('class' => 'col-md-3 control-label', 'text' => __('Icon class'))))
             .$this->PHForm->input('sorting', array('class' => 'form-control input-small'))
         ),
         __('Text') => $this->element('Article.edit_body', array('field' => 'body')),
     );
+
+    if ($id) {
+        $tabs[__('Media')] = $this->element('Media.edit', array('object_type' => $objectType, 'object_id' => $id));
+    }
 
     echo $this->element('AdminUI/tabs', compact('tabs'));
     echo $this->element('AdminUI/form_actions');

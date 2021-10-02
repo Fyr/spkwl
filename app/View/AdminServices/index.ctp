@@ -9,8 +9,15 @@
     echo $this->Flash->render();
 
     $columns = $this->PHTableGrid->getDefaultColumns($objectType);
-    $columns[$objectType.'.title']['label'] = __('Title');
-    $row_actions = '../AdminPages/_row_actions';
+    $columns[$objectType.'.body']['label'] = __('Text');
+    unset($columns['Media.*']);
+    array_unshift($columns, array('key' => 'Media.image', 'label' => __('Photo'), 'format' => 'string', 'align' => 'center'));
+
+    $rowset = $this->PHTableGrid->getDefaultRowset($objectType);
+    foreach($rowset as &$row) {
+        $src = $this->Media->imageUrl($row, '100x');
+        $row['Media']['image'] = ($src) ? $this->Html->image($src, array('class' => 'admin-thumb')) : '';
+    }
 ?>
 <div class="row">
     <div class="col-md-12">
@@ -31,7 +38,7 @@
                         </div>
                     </div>
                 </div>
-                <?=$this->PHTableGrid->render($objectType, compact('row_actions', 'columns'))?>
+                <?=$this->PHTableGrid->render($objectType, compact('columns', 'rowset'))?>
             </div>
         </div>
     </div>

@@ -7,7 +7,7 @@ class AdminServicesController extends AdminContentController {
     public $uses = array('Service');
 
     public $paginate = array(
-        'fields' => array('slug', 'title', 'body', 'sorting'),
+        'fields' => array('title', 'body', 'sorting', 'Media.*'),
         'order' => array('sorting' => 'asc'),
         'limit' => 20
     );

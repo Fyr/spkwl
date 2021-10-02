@@ -14,3 +14,11 @@
 .hero_slider_nav i.fa {
     font-size: 20px;
 }
+
+.services .icon_container {
+    height: 100px;
+}
+
+.footer {
+    padding-top: 0;
+}
