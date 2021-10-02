@@ -1,0 +1,12 @@
+.logo span {
+    font-size: 25px;
+    text-transform: none;
+}
+
+.footer .logo span {
+    font-size: 20px;
+}
+
+.logo_container {
+    padding-left: 50px;
+}

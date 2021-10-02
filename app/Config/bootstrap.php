@@ -35,7 +35,7 @@ Configure::write('Exception.renderer', 'AppExceptionRenderer');
 Configure::write('domain', array(
 	'url' => $_SERVER['SERVER_NAME'],
 	'title' => 'SpeakWell.Test',
-	'name' => 'SpeakWell.Test'
+	'name' => 'SpeakWellCenter'
 ));
 Configure::write('media', array(
 	'path' => WWW_ROOT.'files'.DS,

@@ -26,13 +26,14 @@
 <body>
 <div class="super_container">
 	<!-- Header -->
+
 	<header class="header d-flex flex-row">
 		<div class="header_content d-flex flex-row align-items-center">
 			<!-- Logo -->
 			<div class="logo_container">
 				<div class="logo">
 					<img src="/img/tmp/logo.png" alt="">
-					<span>course</span>
+					<span><?=Configure::read('domain.name')?></span>
 				</div>
 			</div>
 
@@ -594,13 +595,13 @@
 				<div class="row">
 
 					<!-- Footer Column - About -->
-					<div class="col-lg-3 footer_col">
+					<div class="col-lg-4 footer_col">
 
 						<!-- Logo -->
 						<div class="logo_container">
 							<div class="logo">
-								<img src="/img/tmp/logo.png" alt="">
-								<span>course</span>
+								<img src="/img/tmp/logo.png" alt="" />
+								<span><?=Configure::read('domain.name')?></span>
 							</div>
 						</div>
 
@@ -610,7 +611,7 @@
 
 					<!-- Footer Column - Menu -->
 
-					<div class="col-lg-3 footer_col">
+					<div class="col-lg-2 footer_col">
 						<div class="footer_column_title">Menu</div>
 						<div class="footer_column_content">
 							<ul>
@@ -670,12 +671,16 @@
 
 			<!-- Footer Copyright -->
 
-			<div class="footer_bar d-flex flex-column flex-sm-row align-items-center">
+			<!--div class="footer_bar d-flex flex-column flex-sm-row align-items-center">
+<? /*
 				<div class="footer_copyright">
-					<span><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					<span>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+</span>
 				</div>
+*/ ?>
 				<div class="footer_social ml-sm-auto">
 					<ul class="menu_social">
 						<li class="menu_social_item"><a href="#"><i class="fab fa-pinterest"></i></a></li>
@@ -685,7 +690,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 						<li class="menu_social_item"><a href="#"><i class="fab fa-twitter"></i></a></li>
 					</ul>
 				</div>
-			</div>
+			</div-->
 
 		</div>
 	</footer>
