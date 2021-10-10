@@ -427,14 +427,14 @@ msgstr "Главная"
 msgid "News"
 msgstr "События"
 
-msgid "Services"
-msgstr "Услуги"
-
 msgid "Gallery"
 msgstr "Галерея"
 
 msgid "About us"
 msgstr "О нас"
+
+msgid "Services"
+msgstr "Услуги"
 
 msgid "Create service"
 msgstr "Создать услугу"
@@ -565,3 +565,14 @@ msgstr "Новые товары"
 msgid "Subscribing"
 msgstr "Подписка"
 
+msgid "Feedbacks"
+msgstr "Отзывы"
+
+msgid "Create feedback"
+msgstr "Создать отзыв"
+
+msgid "Edit feedback"
+msgstr "Редактировать отзыв"
+
+msgid "What our students say"
+msgstr "Отзывы наших студентов"

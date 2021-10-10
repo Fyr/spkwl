@@ -2,7 +2,7 @@
 App::uses('AppController', 'Controller');
 App::uses('Media', 'Media.Model');
 class PagesController extends AppController {
-	public $uses = array('Media.Media', 'Service');
+	public $uses = array('Media.Media', 'Service', 'Feedback');
 	public $helpers = array('SiteForm');
 
 	public function home() {
@@ -15,7 +15,9 @@ class PagesController extends AppController {
 		$order = array('sorting' => 'asc');
 		$aServices = $this->Service->find('all', compact('order'));
 
-		$this->set(compact('aServices'));
+		$aFeedbacks = $this->Feedback->find('all', compact('order'));
+
+		$this->set(compact('aServices', 'aFeedbacks'));
 /*
 		if ($this->request->is(array('put', 'post'))) {
 			fdebug($this->request->data, 'consult.log'); // to track why NULL records appear

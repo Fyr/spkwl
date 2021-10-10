@@ -25,6 +25,7 @@ class AdminController extends AppController {
         		array('label' => __('Static content'), 'icon' => 'icon-layers', 'url' => '', 'submenu' => array(
         			array('label' => __('Pages'), 'url' => array('controller' => 'AdminPages', 'action' => 'index')),
         			array('label' => __('Services'), 'url' => array('controller' => 'AdminServices', 'action' => 'index')),
+					array('label' => __('Feedbacks'), 'url' => array('controller' => 'AdminFeedbacks', 'action' => 'index')),
         			array('label' => __('News'), 'url' => array('controller' => 'AdminNews', 'action' => 'index')),
         		)),
 				/*

@@ -13,3 +13,4 @@ app/webroot/img/tmp/*
 .idea
 *.bak
 *.bat
+*.log

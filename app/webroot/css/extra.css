@@ -22,3 +22,8 @@
 .footer {
     padding-top: 0;
 }
+
+div.testimonials_text p {
+    color: #FFFFFF;
+    margin-bottom: 0px;
+}
