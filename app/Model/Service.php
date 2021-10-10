@@ -7,7 +7,7 @@ class Service extends AppModel {
             'className' => 'Media.Media',
             'foreignKey' => 'object_id',
             'conditions' => array('Media.media_type' => 'image', 'Media.object_type' => 'Service', 'Media.main' => 1),
-            'dependent' => false
+            'dependent' => true
         )
     );
 }
