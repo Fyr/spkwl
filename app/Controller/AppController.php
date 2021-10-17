@@ -31,12 +31,13 @@ class AppController extends Controller {
 		$this->Settings->initData();
 
 		$this->aNavBar = array(
-			'Home' => array('title' => __('Home'), 'url' => array('controller' => 'Pages', 'action' => 'home')),
-			'Events' => array('title' => __('Events'), 'url' => '/#upcoming'),
+			'Home' => array('title' => __('Home'), 'url' => '/#home'), // array('controller' => 'Pages', 'action' => 'home')
+			'Articles' => array('title' => __('Articles'), 'url' => '/#upcoming'),
+			// 'Events' => array('title' => __('Events'), 'url' => '/#upcoming'),
 			'Services' => array('title' => __('Services'), 'url' => '/#services'),
-			'Shop' => array('title' => __('Shop'), 'url' => array('controller' => 'Products', 'action' => 'index')),
+			// 'Shop' => array('title' => __('Shop'), 'url' => array('controller' => 'Products', 'action' => 'index')),
 			// 'Gallery' => array('title' => __('Gallery'), 'url' => '#gallery'),
-			'About-us' => array('title' => __('About us'), 'url' => '/#about-us'),
+			'About-us' => array('title' => __('About us'), 'url' => '/#about-us'), // array('controller' => 'pages', 'action' => 'view', 'about-us')
 			// 'Articles' => array('title' => __('Articles'), 'url' => array('controller' => 'pages', 'action' => 'view', 'dealers')),
 			'Contacts' => array('title' => __('Contacts'), 'url' => '/#consult'),
 		);

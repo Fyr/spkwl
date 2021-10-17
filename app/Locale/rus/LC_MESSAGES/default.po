@@ -576,3 +576,18 @@ msgstr "Редактировать отзыв"
 
 msgid "What our students say"
 msgstr "Отзывы наших студентов"
+
+msgid "FAQ"
+msgstr "FAQ"
+
+msgid "Create question"
+msgstr "Создать вопрос"
+
+msgid "Edit question"
+msgstr "Редактировать вопрос"
+
+msgid "Question"
+msgstr "Вопрос"
+
+msgid "Answer"
+msgstr "Ответ"

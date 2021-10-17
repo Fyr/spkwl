@@ -15,6 +15,25 @@
     font-size: 20px;
 }
 
+.main_nav_container {
+    padding-right: 63px;
+}
+@media only screen and (max-width: 1380px) {
+    .main_nav_container {
+        padding-right: 33px !important;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .main_nav_container {
+        padding-right: 33px !important;
+    }
+}
+
+.main_nav_item.active a {
+	color: #ffb606;
+}
+
 .services .icon_container {
     height: 100px;
 }
@@ -26,4 +45,105 @@
 div.testimonials_text p {
     color: #FFFFFF;
     margin-bottom: 0px;
+}
+
+.accordion_container
+{
+	margin-bottom: 15px;
+}
+.accordion
+{
+	height: 60px;
+	width: 100%;
+	background: #f8f4f4;
+	padding-left: 30px;
+    padding-right: 65px;
+	cursor: pointer;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.accordion.active
+{
+	background: #ffb606;
+	color: #FFFFFF;
+}
+.accordion:active
+{
+	background: #ffb606 !important;
+	color: #FFFFFF;
+}
+.accordion::after
+{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 62px;
+	height: 100%;
+	content: '+';
+	background: #ffb606;
+	font-size: 20px;
+	color: #FFFFFF;
+	font-weight: 500;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.accordion.active::after
+{
+    font-size: 20px;
+	content: '-';
+}
+.accordion:hover
+{
+	background: #e4e4e4;
+}
+.accordion_panel
+{
+	padding-left: 30px;
+	padding-right: 30px;
+	max-height: 0;
+	overflow: hidden;
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+}
+.accordion_panel p
+{
+	padding-top: 15px;
+}
+
+.section_title {
+    width: 100%;
+}
+
+.article .section_title h1 {
+    margin-bottom: 36px;
+}
+
+/*
+.page_section.article {
+    padding-bottom: 0px;
+}
+*/
+.bkg-grey {
+    background-color: #f8f4f4;
+}
+
+.page_section.article .row img {
+    width: 100%;
 }

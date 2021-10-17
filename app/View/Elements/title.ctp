@@ -1,1 +1,3 @@
-<?=$this->Html->tag('h3', $title, array('class' => 'mb-3'))?>
+<div class="section_title text-center">
+    <h1><?=$title?></h1>
+</div>
