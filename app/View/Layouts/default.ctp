@@ -25,6 +25,9 @@
         'extra'
     ));
 
+	echo $this->Html->script(array(
+        'vendor/jquery-3.2.1.min'
+	));
     echo $this->Html->meta('icon');
     echo $this->fetch('meta');
     echo $this->fetch('css');
@@ -104,56 +107,15 @@
 	</div>
 	
 	<!-- Home -->
-
-	<?=$this->element('slider')?>
-
-	<div class="hero_boxes">
-		<div class="hero_boxes_inner">
-			<div class="container">
-				<div class="row">
-
-					<div class="col-lg-4 hero_box_col">
-						<div class="hero_box d-flex flex-row align-items-center justify-content-start">
-							<img src="/img/tmp/earth-globe.svg" class="svg" alt="">
-							<div class="hero_box_content">
-								<h2 class="hero_box_title">Online Courses</h2>
-								<a href="courses.html" class="hero_box_link">view more</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-4 hero_box_col">
-						<div class="hero_box d-flex flex-row align-items-center justify-content-start">
-							<img src="/img/tmp/books.svg" class="svg" alt="">
-							<div class="hero_box_content">
-								<h2 class="hero_box_title">Our Library</h2>
-								<a href="courses.html" class="hero_box_link">view more</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-4 hero_box_col">
-						<div class="hero_box d-flex flex-row align-items-center justify-content-start">
-							<img src="/img/tmp/professor.svg" class="svg" alt="">
-							<div class="hero_box_content">
-								<h2 class="hero_box_title">Our Teachers</h2>
-								<a href="teachers.html" class="hero_box_link">view more</a>
-							</div>
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<?=$this->fetch('content')?>
-
-	<?=$this->element('footer')?>
+<?
+	echo $this->element('slider');
+	echo $this->element('hero_boxes');
+	echo $this->fetch('content');
+	echo $this->element('footer');
+?>
 </div>
 <?
     echo $this->Html->script(array(
-        'vendor/jquery-3.2.1.min',
         'vendor/popper',
         'vendor/bootstrap.min',
         'vendor/greensock/TweenMax.min',

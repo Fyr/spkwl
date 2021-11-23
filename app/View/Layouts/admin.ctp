@@ -60,12 +60,14 @@
 	.rubl {font-family: 'PT Sans'}
 	.form-text { margin-top: 8px;}
 	.form-inline .form-group { margin-right: 10px; }
-	.navbar-nav .icon-logout {top: -1px;}
+	.navbar-nav i[class^="icon-"] {top: -1px;}
 	.page-header.navbar .page-logo > a { margin-top: 10px; font-size: 16px; color: #bbc1c8; }
 	.page-header.navbar .page-logo > a:hover { color: #e5e7ea; text-decoration: none; }
 	.form-group .checker { margin-top: 8px !important}
 	.form-group .checkbox-list .checker { margin-top: -2px !important; }
-	.navbar-nav > li.link > a, .navbar-nav > li.link > a:visited { background: #747F8C; padding: 14px 5px 12px 5px; color: #bbc1c8; }
+	.page-header.navbar .top-menu .navbar-nav > li.dropdown { padding: 0px; }
+	.page-header.navbar .top-menu .navbar-nav>li.dropdown>.dropdown-toggle { width: 42px; }
+	.navbar-nav > li.link > a, .navbar-nav > li.link > a:visited { background: #747F8C; padding: 14px 5px 12px 5px; color: #bbc1c8;	 }
 	.navbar-nav > li.link > a:hover, .navbar-nav > li.link > a.active { color: #e5e7ea; }
 	.navbar-nav > li.link > a.lang.active { font-weight: bold; }
 	/* .page-header.navbar .top-menu .navbar-nav > li.dropdown > a.dropdown-toggle { padding-top: 14px; color: #bbc1c8; }

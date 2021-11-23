@@ -43,8 +43,13 @@
 					<span><?=__('Welcome, %s!', '<b>Admin</b>')?></span>
 				</li>
 				<li class="dropdown">
-					<a class="dropdown-toggle" href="<?=$this->Html->url(array('controller' => 'AdminAuth', 'action' => 'logout'))?>" title="<?=__('Logout')?>">
-						<i class="icon-logout"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+					<a class="dropdown-toggle action-icon" href="/" title="<?=__('Go to website')?>" target="_blank">
+						<i class="icon-globe"></i>
+					</a>
+				</li>
+				<li class="dropdown">
+					<a class="dropdown-toggle action-icon" href="<?=$this->Html->url(array('controller' => 'AdminAuth', 'action' => 'logout'))?>" title="<?=__('Logout')?>">
+						<i class="icon-logout"></i>
 					</a>
 				</li>
 			</ul>

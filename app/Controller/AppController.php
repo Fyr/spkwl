@@ -105,6 +105,7 @@ class AppController extends Controller {
 		$this->set('pageTitle', $this->pageTitle);
 		$this->set('aBreadcrumbs', $this->aBreadcrumbs);
 
+		/*
 		$this->Page = $this->loadModel('Page');
 		$this->Media = $this->loadModel('Media.Media');
 		$promoImages = array();
@@ -127,11 +128,16 @@ class AppController extends Controller {
 		$limit = 3;
 		$order = array('Product.created' => 'DESC');
 		$aRecentProducts = $this->Product->find('all', compact('conditions', 'order', 'limit'));
-
+		*/
 		$this->Slider = $this->loadModel('Slider');
 		$aSlides = $this->Slider->find('all');
 
-		$this->set(compact('promoImages', 'aCategories', 'aTags', 'aRecentProducts', 'aSlides'));
+		$conditions = array('published' => 1, 'featured' => 1);
+		$order = array('modified' => 'desc');
+		$aFeaturedArticles = $this->loadModel('SiteArticle')->find('all', compact('conditions', 'order'));
+
+		// $this->set(compact('promoImages', 'aCategories', 'aTags', 'aRecentProducts', 'aSlides'));
+		$this->set(compact('aSlides', 'aFeaturedArticles', 'aFeaturedNews'));
 	}
 /*
 	protected function _refreshUser($lForce = false) {

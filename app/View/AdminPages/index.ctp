@@ -7,10 +7,6 @@
     echo $this->element('AdminUI/breadcrumbs', compact('breadcrumbs'));
     echo $this->element('AdminUI/title', compact('title'));
     echo $this->Flash->render();
-
-    $columns = $this->PHTableGrid->getDefaultColumns($objectType);
-    $columns[$objectType.'.title']['label'] = __('Title');
-    $row_actions = '../AdminPages/_row_actions';
 ?>
 <div class="row">
     <div class="col-md-12">
@@ -27,11 +23,10 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-
                         </div>
                     </div>
                 </div>
-                <?=$this->PHTableGrid->render($objectType, compact('row_actions', 'columns'))?>
+                <?=$this->PHTableGrid->render($objectType)?>
             </div>
         </div>
     </div>

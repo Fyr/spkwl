@@ -28,6 +28,7 @@ class AdminController extends AppController {
 					array('label' => __('Feedbacks'), 'url' => array('controller' => 'AdminFeedbacks', 'action' => 'index')),
 					array('label' => __('FAQ'), 'url' => array('controller' => 'AdminFaq', 'action' => 'index')),
         			array('label' => __('News'), 'url' => array('controller' => 'AdminNews', 'action' => 'index')),
+					array('label' => __('Articles'), 'url' => array('controller' => 'AdminArticles', 'action' => 'index')),
         		)),
 				/*
         		array('label' => __('Shop'), 'icon' => 'icon-docs', 'url' => '', 'submenu' => array(

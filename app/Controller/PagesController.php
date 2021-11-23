@@ -2,16 +2,10 @@
 App::uses('AppController', 'Controller');
 App::uses('Media', 'Media.Model');
 class PagesController extends AppController {
-	public $uses = array('Media.Media', 'Page', 'Service', 'Feedback', 'Faq');
+	public $uses = array('Media.Media', 'Page', 'Service', 'Feedback', 'Faq', 'News');
 	public $helpers = array('SiteForm');
 
 	public function home() {
-		/*
-		// hot news
-		$conditions = array('published' => 1, 'featured' => 1);
-		$order = array('modified' => 'desc');
-		$aNews = $this->News->find('all', compact('conditions', 'order'));
-		*/
 		$page = array(
 			'home' => $this->Page->findBySlug('home'),
 			'about-us' => $this->Page->findBySlug('about-us')
@@ -22,7 +16,11 @@ class PagesController extends AppController {
 		$aFeedbacks = $this->Feedback->find('all', compact('order'));
 		$aFaq = $this->Faq->find('all', compact('order'));
 
-		$this->set(compact('page', 'aServices', 'aFeedbacks', 'aFaq'));
+		$conditions = array('published' => 1, 'featured' => 1);
+		$order = array('modified' => 'desc');
+		$aFeaturedNews = $this->News->find('all', compact('conditions', 'order'));
+
+		$this->set(compact('page', 'aServices', 'aFeedbacks', 'aFaq', 'aFeaturedNews'));
 /*
 		if ($this->request->is(array('put', 'post'))) {
 			fdebug($this->request->data, 'consult.log'); // to track why NULL records appear
@@ -43,7 +41,7 @@ class PagesController extends AppController {
 	}
 
 	public function view($slug) {
-		$this->set('article', $this->Page->findBySlug($slug));
+		$this->set('page', $this->Page->findBySlug($slug));
 		// $this->currMenu = ucfirst($slug);
 	}
 }

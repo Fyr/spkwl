@@ -56,8 +56,7 @@ class SiteRouter extends Router {
 			$url = array(
 				'controller' => 'articles',
 				'action' => 'view',
-				'objectType' => $objectType,
-				'slug' => $article[$objectType]['id']
+				$article[$objectType]['id']
 			);
 		}
 		return parent::url($url);

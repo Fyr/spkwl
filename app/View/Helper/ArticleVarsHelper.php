@@ -18,7 +18,9 @@ class ArticleVarsHelper extends AppHelper {
 
 	public function body($article) {
 		$objectType = $this->getObjectType($article);
-		return '<article>'.$article[$objectType]['body'].'</article>';
+		$body = $article[$objectType]['body'];
+		// $pos = strpos('<p>', $body);
+		return '<article>'.$body.'</article>';
 	}
 
 	public function divideColumns($items, $cols) {

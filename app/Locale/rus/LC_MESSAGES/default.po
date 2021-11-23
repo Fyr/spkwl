@@ -400,6 +400,9 @@ msgstr "Редактировать подкатегорию"
 msgid "For home page"
 msgstr "На главную"
 
+msgid "On slider"
+msgstr "На слайдер"
+
 msgid "search on site"
 msgstr "поиск по сайту"
 
@@ -425,7 +428,7 @@ msgid "Home"
 msgstr "Главная"
 
 msgid "News"
-msgstr "События"
+msgstr "Новости"
 
 msgid "Gallery"
 msgstr "Галерея"
