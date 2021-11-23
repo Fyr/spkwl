@@ -15,6 +15,7 @@
     echo $this->Html->css(array(
         'bootstrap.min',
         'fontawesome/css/fontawesome-all',
+		'icomoon',
         'owl-carousel/owl.carousel',
         'owl-carousel/owl.theme.default',
         'owl-carousel/animate',
@@ -56,7 +57,7 @@
 		</div>
 		<div class="header_side d-flex flex-row justify-content-center align-items-center">
 			<img src="/img/tmp/phone-call.svg" alt="">
-			<span>+43 4566 7788 2457</span>
+			<span><?=$this->Settings->read('phone')?></span>
 		</div>
 
 		<!-- Hamburger -->

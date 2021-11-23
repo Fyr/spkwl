@@ -21,7 +21,4 @@ class AdminSettingsController extends AdminController {
 
     public function contacts() {}
     public function pageFooter() {}
-    public function promoLeft() {}
-    public function promoMain() {}
-    public function promoRight() {}
 }

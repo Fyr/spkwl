@@ -147,3 +147,10 @@ div.testimonials_text p {
 .page_section.article .row img {
     width: 100%;
 }
+.footer_contact_item span.icon {
+	color: #ffb606;
+	margin-right: 5px;
+    font-size: 1.5em;
+    position: relative;
+    top: 0.2em;
+}
